@@ -1,7 +1,19 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Doctor from '../doctor/Doctor';
 
 const Doctors = ({doctorsData}) => {
+
+const [doctors,setDoctors] = useState([]);
+    const [showAll, setShowAll] = useState(false);
+
+    useEffect(()=>{
+      if(showAll){
+        setDoctors(doctorsData)
+      }else{
+        setDoctors(doctorsData.slice(0,6))
+      }
+    },[showAll,doctorsData])
+   
 
     return (
         <div className='my-10 p-4'>
@@ -12,9 +24,16 @@ const Doctors = ({doctorsData}) => {
                 </div>
                 <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-4 '>
                     {
-                        doctorsData.map(singleDoctor=><Doctor key={singleDoctor.id} singleDoctor={singleDoctor}></Doctor>)
+                        doctors.map(singleDoctor=><Doctor key={singleDoctor.id} singleDoctor={singleDoctor}></Doctor>)
                     }
                 </div>
+
+               <div className='flex justify-center py-6'>
+               <button onClick={()=>{
+                setShowAll((rev)=>!rev);
+                if(showAll) return window.scrollTo(0,800)
+               }} className='btn btn-success text-white'>{showAll ? 'Show Less Doctors':'View All Doctors'}</button>
+               </div>
             
         </div>
     );
