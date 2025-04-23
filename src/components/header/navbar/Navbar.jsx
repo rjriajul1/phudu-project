@@ -8,8 +8,8 @@ import './navbar.css'
 const Navbar = () => {
     const [open,setOpen] = useState(false)
     return (
-        <div className='p-2'>
-            <div className='flex justify-between items-center shadow p-4'>
+        <div >
+            <div className='flex p-4 justify-between items-center shadow '>
                 <div className='flex items-center'>
                     
                    <span onClick={()=>setOpen(!open)} className='mr-5 md:mr-0'>

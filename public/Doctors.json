@@ -1,0 +1,305 @@
+[
+  
+        {
+          "id": 1,
+          "name": "Dr. Ayesha Rahman",
+          "specialization": "Cardiologist",
+          "experience": 12,
+          "rating": 4.8,
+          "available": true,
+          "languages": ["English", "Bengali"],
+          "location": "Dhaka, Bangladesh",
+          "quality": {
+            "fee": {
+              "amount": 1000,
+              "currency": "BDT",
+              "type": "Consultation"
+            },
+            "education": {
+              "degree": "MBBS, FCPS (Cardiology)",
+              "institution": "Dhaka Medical College",
+              "graduationYear": 2010
+            }
+          },
+          "registrationNumber": "BDMC123456",
+          "photoUrl": "https://i.ibb.co.com/q3t55hLX/doctor-1.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Dr. Imran Hossain",
+          "specialization": "Dermatologist",
+          "experience": 8,
+          "rating": 4.5,
+          "available": false,
+          "languages": ["English", "Bengali", "Hindi"],
+          "location": "Chittagong, Bangladesh",
+          "quality": {
+            "fee": {
+              "amount": 800,
+              "currency": "BDT",
+              "type": "Consultation"
+            },
+            "education": {
+              "degree": "MBBS, MD (Dermatology)",
+              "institution": "Chittagong Medical College",
+              "graduationYear": 2014
+            }
+          },
+          "registrationNumber": "BDMC789012",
+          "photoUrl": "https://i.ibb.co.com/5XsKsLNN/doctor-4.jpg"
+        },
+        
+        {
+          "id": 3,
+          "name": "Dr. Farhana Karim",
+          "specialization": "Pediatrician",
+          "experience": 10,
+          "rating": 4.9,
+          "available": true,
+          "languages": ["English"],
+          "location": "Sylhet, Bangladesh",
+          "quality": {
+            "fee": {
+              "amount": 900,
+              "currency": "BDT",
+              "type": "Consultation"
+            },
+            "education": {
+              "degree": "MBBS, FCPS (Pediatrics)",
+              "institution": "Sylhet MAG Osmani Medical College",
+              "graduationYear": 2012
+            }
+          },
+          "registrationNumber": "BDMC345678",
+          "photoUrl": "https://i.ibb.co.com/q3t55hLX/doctor-1.jpg"
+        },
+    
+        {
+          "id": 4,
+          "name": "Dr. Mahmudul Haque",
+          "specialization": "Neurologist",
+          "experience": 15,
+          "rating": 4.7,
+          "available": true,
+          "languages": ["English", "Bengali"],
+          "location": "Rajshahi, Bangladesh",
+          "quality": {
+            "fee": {
+              "amount": 1500,
+              "currency": "BDT",
+              "type": "Consultation"
+            },
+            "education": {
+              "degree": "MBBS, MD (Neurology)",
+              "institution": "Rajshahi Medical College",
+              "graduationYear": 2008
+            }
+          },
+          "registrationNumber": "BDMC901234",
+          "photoUrl": "https://i.ibb.co.com/MyQpvrJN/doctor-5.jpg"
+        },
+
+        {
+          "id": 5,
+          "name": "Dr. Nusrat Jahan",
+          "specialization": "Gynecologist",
+          "experience": 11,
+          "rating": 4.6,
+          "available": true,
+          "languages": ["English", "Bengali"],
+          "location": "Barisal, Bangladesh",
+          "quality": {
+            "fee": {
+              "amount": 950,
+              "currency": "BDT",
+              "type": "Consultation"
+            },
+            "education": {
+              "degree": "MBBS, FCPS (Gynecology)",
+              "institution": "Barisal Medical College",
+              "graduationYear": 2011
+            }
+          },
+          "registrationNumber": "BDMC567890",
+          "photoUrl": "https://i.ibb.co.com/B5jqK615/doctor-6.jpg"
+        },
+
+        {
+          "id": 6,
+          "name": "Dr. Tanvir Alam",
+          "specialization": "Orthopedic Surgeon",
+          "experience": 9,
+          "rating": 4.3,
+          "available": false,
+          "languages": ["English"],
+          "location": "Khulna, Bangladesh",
+          "quality": {
+            "fee": {
+              "amount": 1200,
+              "currency": "BDT",
+              "type": "Consultation"
+            },
+            "education": {
+              "degree": "MBBS, MS (Orthopedics)",
+              "institution": "Khulna Medical College",
+              "graduationYear": 2013
+            }
+          },
+          "registrationNumber": "BDMC654321",
+          "photoUrl": "https://i.ibb.co.com/cXpX7wHN/doctor-7.jpg"
+        },
+    
+  
+        {
+          "id": 7,
+          "name": "Dr. Rubaiya Sultana",
+          "specialization": "ENT Specialist",
+          "experience": 7,
+          "rating": 4.2,
+          "available": true,
+          "languages": ["English", "Bengali"],
+          "location": "Comilla, Bangladesh",
+          "quality": {
+            "fee": {
+              "amount": 750,
+              "currency": "BDT",
+              "type": "Consultation"
+            },
+            "education": {
+              "degree": "MBBS, DLO (ENT)",
+              "institution": "Comilla Medical College",
+              "graduationYear": 2015
+            }
+          },
+          "registrationNumber": "BDMC321654",
+          "photoUrl": "https://i.ibb.co.com/nGK1YXr/doctor-8.jpg"
+        },
+
+        {
+          "id": 8,
+          "name": "Dr. Kamrul Islam",
+          "specialization": "Urologist",
+          "experience": 13,
+          "rating": 4.4,
+          "available": false,
+          "languages": ["English", "Bengali", "Hindi"],
+          "location": "Rangpur, Bangladesh",
+          "quality": {
+            "fee": {
+              "amount": 1300,
+              "currency": "BDT",
+              "type": "Consultation"
+            },
+            "education": {
+              "degree": "MBBS, MS (Urology)",
+              "institution": "Rangpur Medical College",
+              "graduationYear": 2009
+            }
+          },
+          "registrationNumber": "BDMC147258",
+          "photoUrl": "https://i.ibb.co.com/rGSypQ8b/doctor-9.jpg"
+        },
+
+        {
+          "id": 9,
+          "name": "Dr. Shaila Akter",
+          "specialization": "Psychiatrist",
+          "experience": 6,
+          "rating": 4.1,
+          "available": true,
+          "languages": ["English", "Bengali"],
+          "location": "Mymensingh, Bangladesh",
+          "quality": {
+            "fee": {
+              "amount": 850,
+              "currency": "BDT",
+              "type": "Consultation"
+            },
+            "education": {
+              "degree": "MBBS, MD (Psychiatry)",
+              "institution": "Mymensingh Medical College",
+              "graduationYear": 2016
+            }
+          },
+          "registrationNumber": "BDMC963852",
+          "photoUrl": "https://i.ibb.co.com/rGSypQ8b/doctor-9.jpg"
+        },
+      
+    
+        {
+          "id": 10,
+          "name": "Dr. Aminul Haque",
+          "specialization": "Oncologist",
+          "experience": 14,
+          "rating": 4.7,
+          "available": true,
+          "languages": ["English"],
+          "location": "Dhaka, Bangladesh",
+          "quality": {
+            "fee": {
+              "amount": 2000,
+              "currency": "BDT",
+              "type": "Consultation"
+            },
+            "education": {
+              "degree": "MBBS, MD (Oncology)",
+              "institution": "National Cancer Research Institute",
+              "graduationYear": 2007
+            }
+          },
+          "registrationNumber": "BDMC753159",
+          "photoUrl": "https://i.ibb.co.com/fzdvMHzy/doctor-12.jpg"
+        },
+
+        {
+          "id": 11,
+          "name": "Dr. Sumaiya Siddique",
+          "specialization": "Endocrinologist",
+          "experience": 10,
+          "rating": 4.5,
+          "available": false,
+          "languages": ["English", "Bengali"],
+          "location": "Bogura, Bangladesh",
+          "quality": {
+            "fee": {
+              "amount": 1100,
+              "currency": "BDT",
+              "type": "Consultation"
+            },
+            "education": {
+              "degree": "MBBS, MD (Endocrinology)",
+              "institution": "Bogura Medical College",
+              "graduationYear": 2011
+            }
+          },
+          "registrationNumber": "BDMC258147",
+          "photoUrl": "https://i.ibb.co.com/nGK1YXr/doctor-8.jpg"
+        },
+
+        {
+          "id": 12,
+          "name": "Dr. Zahid Hasan",
+          "specialization": "General Surgeon",
+          "experience": 9,
+          "rating": 4.4,
+          "available": true,
+          "languages": ["English", "Bengali"],
+          "location": "Narayanganj, Bangladesh",
+          "quality": {
+            "fee": {
+              "amount": 1250,
+              "currency": "BDT",
+              "type": "Consultation"
+            },
+            "education": {
+              "degree": "MBBS, MS (Surgery)",
+              "institution": "Sir Salimullah Medical College",
+              "graduationYear": 2013
+            }
+          },
+          "registrationNumber": "BDMC369258",
+          "photoUrl": "https://i.ibb.co.com/fzdvMHzy/doctor-12.jpg"
+        }
+      ]
+  
+  

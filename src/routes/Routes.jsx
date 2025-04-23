@@ -4,6 +4,11 @@ import Home from "../pages/home/Home";
 import MyBookings from "../pages/myBookings/MyBookings";
 import Blogs from "../pages/blogs/Blogs";
 import ContactUs from "../pages/contactUs/ContactUs";
+import axios from "axios";
+import { Suspense } from "react";
+
+const dataPromise = axios.get('Doctors.json');
+
 
 export const router = createBrowserRouter([
   {
@@ -12,7 +17,9 @@ export const router = createBrowserRouter([
     children: [
       {
         index: true,
-        Component: Home,
+        element: <Suspense fallback={<span>loading.......</span>}>
+           <Home dataPromise={dataPromise}></Home>
+        </Suspense>
       },
       {
         path:'myBookings',
