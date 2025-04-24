@@ -1,6 +1,7 @@
 import React, { use } from 'react';
 import Banner from '../../components/banner/Banner';
 import Doctors from '../doctors/Doctors';
+import Counter from '../../components/counter/Counter';
 
 const Home = ({dataPromise}) => {
     const doctorsPromise = use(dataPromise);
@@ -10,6 +11,7 @@ const Home = ({dataPromise}) => {
         <div className=''>
             <Banner/>
             <Doctors doctorsData={doctorsData}/>
+            <Counter/>
         </div>
     );
 };
