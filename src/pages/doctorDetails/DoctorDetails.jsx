@@ -29,11 +29,8 @@ const DoctorDetails = () => {
 
   const {
     name,
-    experience,
-    available,
     image,
     education,
-    specialization,
     registrationNumber,
     details,
     institution,

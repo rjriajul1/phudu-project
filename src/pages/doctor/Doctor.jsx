@@ -38,7 +38,7 @@ const { name, experience,  image, education, id, registrationNumber} = doctor;
         <div>Reg No: {registrationNumber}</div>
         </div>
           <div>
-            <Link to={`/doctorDetails/${id}`}><button className="w-full border rounded-2xl text-blue-500 p-2 mt-2 hover:bg-blue-500 hover:text-white font-bold">View Details</button></Link>
+            <Link to={`/doctorDetails/${id}`}><button className="w-full border rounded-2xl text-blue-500 p-2 mt-2 hover:bg-blue-500 hover:text-white font-bold cursor-pointer">View Details</button></Link>
           </div>
         </div>
       </div>
