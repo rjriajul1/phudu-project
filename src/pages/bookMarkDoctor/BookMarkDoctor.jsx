@@ -1,6 +1,7 @@
 import React from 'react';
 
-const BookMarkDoctor = ({doctor}) => {
+
+const BookMarkDoctor = ({doctor,handleCancelAppointment}) => {
 
     const doctors = {
         id: doctor.id,
@@ -17,8 +18,9 @@ const BookMarkDoctor = ({doctor}) => {
         availableDays: doctor.availableDays,
         present:doctor.available
       };
-    const {name, fee,education} = doctors || {};
+    const {name, fee,education,id} = doctors || {};
 
+    
     
     return (
         <div className='rounded-2xl mt-6 py-5 bg-white'>
@@ -33,7 +35,7 @@ const BookMarkDoctor = ({doctor}) => {
               
             </div>
          <div className='p-7'>
-         <button className='w-full border border-red-500 rounded-2xl text-red-500 font-semibold p-2'>cancel Appointment</button>
+         <button onClick={()=> handleCancelAppointment(id)} className='w-full border border-red-500 rounded-2xl text-red-500 font-semibold p-2'>cancel Appointment</button>
          </div>
         </div>
     );

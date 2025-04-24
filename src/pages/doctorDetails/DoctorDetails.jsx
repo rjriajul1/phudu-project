@@ -1,11 +1,13 @@
 import React from "react";
-import { useLoaderData, useParams } from "react-router";
+import { useLoaderData, useNavigate, useParams } from "react-router";
 import { CiWarning } from "react-icons/ci";
-import { addToLocalSTR } from "../../utilies/LocalStorag";
+import { getItemfromLocalSTR, saveToLocalSTR } from "../../utilies/LocalStorag";
+import { toast } from "react-toastify";
 
 
 const DoctorDetails = () => {
   const { id } = useParams();
+  const navigate = useNavigate()
   const data = useLoaderData();
   const convertedId = parseInt(id);
 
@@ -43,7 +45,19 @@ const DoctorDetails = () => {
   } = doctor || {};
 
   const handleAppointment = (id) =>{
-    addToLocalSTR(id)
+
+    const stordId = getItemfromLocalSTR();
+
+    if(stordId.includes(id)){
+      toast("already added")
+    }
+    else{
+      toast("added successfully!");
+      stordId.push(id)
+    saveToLocalSTR(stordId)
+    navigate('/myBookings')
+    }
+  
   }
 
 

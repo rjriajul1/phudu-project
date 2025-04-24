@@ -1,4 +1,4 @@
-import {  toast } from 'react-toastify';
+
 const getItemfromLocalSTR = () =>{
 
     const getItem = localStorage.getItem('appointment');
@@ -17,15 +17,23 @@ const saveToLocalSTR = (id) =>{
 }
 
 
-const addToLocalSTR = (id) =>{
-    const stordDoctor = getItemfromLocalSTR();
+// const addToLocalSTR = (id) =>{
+//     const stordDoctor = getItemfromLocalSTR();
 
-    if(stordDoctor.includes(id)){
-        toast("Wow so easy!");
-    }else{
-        stordDoctor.push(id)
-        saveToLocalSTR(stordDoctor)
-    }
+//     if(stordDoctor.includes(id)){
+//         toast("Wow so easy!");
+//     }else{
+//         stordDoctor.push(id)
+//         saveToLocalSTR(stordDoctor)
+//     }
+// };
+
+
+const removeFromLocalSTR = (id)=>{
+    const stordId = getItemfromLocalSTR()
+    const convertedId = stordId.map((id) => parseInt(id));
+    const remaningId = convertedId.filter(singelId=> singelId !== id);
+    saveToLocalSTR(remaningId)
 }
 
-export {addToLocalSTR,getItemfromLocalSTR}
+export {getItemfromLocalSTR,removeFromLocalSTR,saveToLocalSTR}
