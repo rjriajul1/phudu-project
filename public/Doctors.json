@@ -3,10 +3,12 @@
         {
           "id": 1,
           "name": "Dr. Ayesha Rahman",
+          "details": "Renowned cardiologist with over a decade of experience treating complex heart conditions.",
           "specialization": "Cardiologist",
           "experience": 12,
           "rating": 4.8,
           "available": true,
+          "availableDays": ["Sunday", "Tuesday", "Thursday"],
           "languages": ["English", "Bengali"],
           "location": "Dhaka, Bangladesh",
           "quality": {
@@ -27,10 +29,12 @@
         {
           "id": 2,
           "name": "Dr. Imran Hossain",
+          "details": "Specializes in skin and hair treatments with a focus on cosmetic dermatology.",
           "specialization": "Dermatologist",
           "experience": 8,
           "rating": 4.5,
           "available": false,
+          "availableDays": ["Monday", "Wednesday"],
           "languages": ["English", "Bengali", "Hindi"],
           "location": "Chittagong, Bangladesh",
           "quality": {
@@ -52,10 +56,12 @@
         {
           "id": 3,
           "name": "Dr. Farhana Karim",
+          "details": "Trusted pediatrician providing care for infants and children with a kind and thorough approach.",
           "specialization": "Pediatrician",
           "experience": 10,
           "rating": 4.9,
           "available": true,
+          "availableDays": ["Saturday", "Monday", "Wednesday"],
           "languages": ["English"],
           "location": "Sylhet, Bangladesh",
           "quality": {
@@ -77,10 +83,12 @@
         {
           "id": 4,
           "name": "Dr. Mahmudul Haque",
+          "details": "Experienced neurologist handling complex neurological disorders and stroke rehabilitation.",
           "specialization": "Neurologist",
           "experience": 15,
           "rating": 4.7,
           "available": true,
+          "availableDays": ["Sunday", "Tuesday", "Friday"],
           "languages": ["English", "Bengali"],
           "location": "Rajshahi, Bangladesh",
           "quality": {
@@ -102,10 +110,12 @@
         {
           "id": 5,
           "name": "Dr. Nusrat Jahan",
+          "details": "Specialist in women’s health, maternity care, and high-risk pregnancies.",
           "specialization": "Gynecologist",
           "experience": 11,
           "rating": 4.6,
           "available": true,
+          "availableDays": ["Saturday", "Tuesday", "Thursday"],
           "languages": ["English", "Bengali"],
           "location": "Barisal, Bangladesh",
           "quality": {
@@ -127,10 +137,12 @@
         {
           "id": 6,
           "name": "Dr. Tanvir Alam",
+          "details": "Skilled orthopedic surgeon specializing in trauma, joint replacements, and sports injuries.",
           "specialization": "Orthopedic Surgeon",
           "experience": 9,
           "rating": 4.3,
           "available": false,
+          "availableDays": ["Monday", "Wednesday"],
           "languages": ["English"],
           "location": "Khulna, Bangladesh",
           "quality": {
@@ -153,10 +165,12 @@
         {
           "id": 7,
           "name": "Dr. Rubaiya Sultana",
+          "details": "Expert in ear, nose, and throat treatments with a modern approach to ENT surgery.",
           "specialization": "ENT Specialist",
           "experience": 7,
           "rating": 4.2,
           "available": true,
+          "availableDays": ["Sunday", "Tuesday", "Thursday"],
           "languages": ["English", "Bengali"],
           "location": "Comilla, Bangladesh",
           "quality": {
@@ -178,10 +192,12 @@
         {
           "id": 8,
           "name": "Dr. Kamrul Islam",
+          "details": "Highly experienced in treating kidney stones, urinary issues, and male reproductive health.",
           "specialization": "Urologist",
           "experience": 13,
           "rating": 4.4,
           "available": false,
+          "availableDays": ["Monday", "Thursday"],
           "languages": ["English", "Bengali", "Hindi"],
           "location": "Rangpur, Bangladesh",
           "quality": {
@@ -203,10 +219,12 @@
         {
           "id": 9,
           "name": "Dr. Shaila Akter",
+          "details": "Focused on mental health, anxiety, depression, and therapeutic counseling.",
           "specialization": "Psychiatrist",
           "experience": 6,
           "rating": 4.1,
           "available": true,
+          "availableDays": ["Sunday", "Wednesday", "Friday"],
           "languages": ["English", "Bengali"],
           "location": "Mymensingh, Bangladesh",
           "quality": {
@@ -229,10 +247,12 @@
         {
           "id": 10,
           "name": "Dr. Aminul Haque",
+          "details": "Leading cancer specialist providing advanced oncology care and support.",
           "specialization": "Oncologist",
           "experience": 14,
           "rating": 4.7,
           "available": true,
+          "availableDays": ["Monday", "Wednesday", "Friday"],
           "languages": ["English"],
           "location": "Dhaka, Bangladesh",
           "quality": {
@@ -254,10 +274,12 @@
         {
           "id": 11,
           "name": "Dr. Sumaiya Siddique",
+          "details": "Experienced in managing diabetes, thyroid disorders, and hormonal imbalances.",
           "specialization": "Endocrinologist",
           "experience": 10,
           "rating": 4.5,
           "available": false,
+          "availableDays": ["Tuesday", "Thursday"],
           "languages": ["English", "Bengali"],
           "location": "Bogura, Bangladesh",
           "quality": {
@@ -279,10 +301,12 @@
         {
           "id": 12,
           "name": "Dr. Zahid Hasan",
+          "details": "General surgeon specializing in minimally invasive surgery and emergency procedures.",
           "specialization": "General Surgeon",
           "experience": 9,
           "rating": 4.4,
           "available": true,
+          "availableDays": ["Saturday", "Monday", "Thursday"],
           "languages": ["English", "Bengali"],
           "location": "Narayanganj, Bangladesh",
           "quality": {

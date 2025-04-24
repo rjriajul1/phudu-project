@@ -6,8 +6,9 @@ import Blogs from "../pages/blogs/Blogs";
 import ContactUs from "../pages/contactUs/ContactUs";
 import axios from "axios";
 import { Suspense } from "react";
+import DoctorDetails from "../pages/doctorDetails/DoctorDetails";
 
-const dataPromise = axios.get('Doctors.json');
+const dataPromise = axios.get('../Doctors.json');
 
 
 export const router = createBrowserRouter([
@@ -20,6 +21,11 @@ export const router = createBrowserRouter([
         element: <Suspense fallback={<span>loading.......</span>}>
            <Home dataPromise={dataPromise}></Home>
         </Suspense>
+      },
+      {
+         path:'doctorDetails/:id',
+         loader: ()=> fetch('../Doctors.json'),
+         Component:DoctorDetails
       },
       {
         path:'myBookings',
