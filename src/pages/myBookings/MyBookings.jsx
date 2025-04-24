@@ -5,6 +5,7 @@ import BookMarkDoctor from "../bookMarkDoctor/BookMarkDoctor";
 import { removeFromLocalSTR } from "../../utilies/LocalStorag";
 import EmptyMessage from "../../components/emptyMessage/EmptyMessage";
 import { Bar, BarChart, Tooltip, XAxis, YAxis } from "recharts";
+import { toast } from "react-toastify";
 
 const MyBookings = () => {
   // all doctors data load
@@ -24,6 +25,7 @@ const MyBookings = () => {
   const handleCancelAppointment = (id) => {
     setDoctors(doctors.filter((doctor) => doctor.id !== id));
     removeFromLocalSTR(id);
+    toast('cancel Appointment')
   };
 
   // empty message
@@ -37,7 +39,7 @@ const MyBookings = () => {
     };
     return doctor;
   });
-  
+
   return (
     <div>
       <div className="flex justify-center py-8">

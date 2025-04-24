@@ -7,14 +7,19 @@ import ContactUs from "../pages/contactUs/ContactUs";
 import axios from "axios";
 import { Suspense } from "react";
 import DoctorDetails from "../pages/doctorDetails/DoctorDetails";
+import Error from "../components/error/Error";
+import Navbar from "../components/header/navbar/Navbar";
 
 const dataPromise = axios.get('../Doctors.json');
-
 
 export const router = createBrowserRouter([
   {
     path: "/",
     Component: Root,
+    errorElement:<div>
+      <Navbar/>
+      <Error/>
+    </div>,
     children: [
       {
         index: true,

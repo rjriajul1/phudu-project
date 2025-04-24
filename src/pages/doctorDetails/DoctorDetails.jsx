@@ -44,7 +44,7 @@ const DoctorDetails = () => {
 
   } = doctor || {};
 
-  const handleAppointment = (id) =>{
+  const handleAppointment = (id,name) =>{
 
     const stordId = getItemfromLocalSTR();
 
@@ -52,7 +52,7 @@ const DoctorDetails = () => {
       toast("already added")
     }
     else{
-      toast("added successfully!");
+      toast(`added successfully! ${name} `);
       stordId.push(id)
     saveToLocalSTR(stordId)
     navigate('/myBookings')
@@ -119,7 +119,7 @@ const DoctorDetails = () => {
         <hr className=" border-gray-400 " />
 
         <p className=" my-3 text-orange-500 bg-amber-100 rounded-2xl  p-1 flex  gap-2 items-center"><CiWarning size={30}/>Due to high patient volume, we are currently accepting appointments for today only. We appreciate your understanding and cooperation.</p>
-        <button onClick={()=>handleAppointment(id)} className="btn btn-info text-white font-bold text-xl text-center w-full mt-6 rounded-2xl">Book Appointment Now</button>
+        <button onClick={()=>handleAppointment(id,name)} className="btn btn-info text-white font-bold text-xl text-center w-full mt-6 rounded-2xl">Book Appointment Now</button>
       </div>
 
     </div>
