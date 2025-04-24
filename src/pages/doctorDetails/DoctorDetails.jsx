@@ -1,6 +1,7 @@
 import React from "react";
 import { useLoaderData, useParams } from "react-router";
 import { CiWarning } from "react-icons/ci";
+import { addToLocalSTR } from "../../utilies/LocalStorag";
 
 
 const DoctorDetails = () => {
@@ -28,6 +29,7 @@ const DoctorDetails = () => {
   };
 
   const {
+  
     name,
     image,
     education,
@@ -36,8 +38,14 @@ const DoctorDetails = () => {
     institution,
     availableDays,
     fee,
-    present
+    present,
+
   } = doctor || {};
+
+  const handleAppointment = (id) =>{
+    addToLocalSTR(id)
+  }
+
 
   return (
     <div>
@@ -97,7 +105,7 @@ const DoctorDetails = () => {
         <hr className=" border-gray-400 " />
 
         <p className=" my-3 text-orange-500 bg-amber-100 rounded-2xl  p-1 flex  gap-2 items-center"><CiWarning size={30}/>Due to high patient volume, we are currently accepting appointments for today only. We appreciate your understanding and cooperation.</p>
-        <button className="btn btn-info text-white font-bold text-xl text-center w-full mt-6 rounded-2xl">Book Appointment Now</button>
+        <button onClick={()=>handleAppointment(id)} className="btn btn-info text-white font-bold text-xl text-center w-full mt-6 rounded-2xl">Book Appointment Now</button>
       </div>
 
     </div>
